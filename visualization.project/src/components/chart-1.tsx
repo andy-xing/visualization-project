@@ -16,6 +16,7 @@ export const Chart1 = () => {
       title:{show:false},
       legend:{show:false},
       xAxis: {
+        fontSize: px(24),
         data: ['罗湖区', '光明新区', '宝安区', '龙华区', '南山区', '福田区','罗湖区','盐田区','坪山区','大鹏区'],
         axisTick:{show:false},
         axisLabel: {
@@ -56,5 +57,4 @@ export const Chart1 = () => {
       <h2>案发派出所管辖统计</h2>
       <div ref={divRef} className={'chart'}></div>
     </div>
-  );
-};
+  );}
