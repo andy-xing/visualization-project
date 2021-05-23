@@ -1,0 +1,98 @@
+@import "../shared/helper";
+
+.home {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, .7);
+  color: #fff;
+  box-shadow: 0 0 10px 1px #103852;
+  overflow: hidden;
+
+
+  > header {
+    height: px(99);
+    font-size: px(40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: linear-gradient(
+                    90deg, #081823 0, rgba(0, 0, 0, 0) 50%, #081823 100%);
+    position: relative;
+    text-shadow: 0 0 10px #1d393d, 0 0 20px #1d393d, 0 0 30px #1d393d, 0 0 40px #1d393d;
+  }
+
+  > main {
+    padding-top: px(30);
+    flex: 1;
+    display: grid;
+    grid-template:
+      "box1 box2 box3" 1070fr / 580fr 1080fr 580fr;
+    grid-column-gap: px(28);
+
+    > section {
+      text-align: center
+    }
+
+    .bordered {
+      border: 1px solid #0764bc;
+      border-radius: 4px;
+      position: relative;
+      box-shadow: 0 0 2px 0 #0e325f, inset 0 0 2px 0 #0e325f;
+      background: #0c1139;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        border-radius: 4px;
+        box-shadow: 17px 0 0 -16px #0e325f,
+        -17px 0 0 -16px #0e325f,
+        0 17px 0 -16px #0e325f,
+        0 -17px 0 -16px #0e325f,
+        9px 0 0 -8px #0d4483,
+        -9px 0 0 -8px #0d4483,
+        0 9px 0 -8px #0d4483,
+        0 -9px 0 -8px #0d4483,;
+      }
+    }
+
+    > .section1 {
+      grid-area: box1;
+    }
+
+    > .section2 {
+      grid-area: box2;
+
+    }
+
+    > .section3 {
+      grid-area: box3;
+    }
+
+    .管辖统计 {
+      height: px(372);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      > h2 {
+        font-size: px(22);
+        border: 1px solid #0a5299;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        line-height: px(24);
+        padding: px(10) px(28);
+        text-shadow: 0 0 px(3) #eee;
+      }
+      .chart{
+        flex: 1;
+        width: 100%;
+      }
+    }
+  }
+}
