@@ -4,3 +4,9 @@
 $blue: #002866;
 $font-hei: -apple-system, "Noto Sans", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Source Han Sans CN", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 
+%legend {
+  height: px(40); display: flex; align-items: center;
+  justify-content: center; flex-wrap: wrap; padding-right: px(10);
+  > span {display: inline-block; width: px(16); height: px(10);
+    border-radius: px(2); margin: 0 px(10);}
+}

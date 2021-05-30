@@ -6,10 +6,10 @@ import {px} from '../shared/px';
 export const Chart12 = () => {
   const divRef = useRef(null);
   const data = [
-    {value: 0.08, name: '南园街道'},
-    {value: 0.06, name: '桂园街道'},
-    {value: 0.11, name: '南山街道'},
-    {value: 0.09, name: '沙头角街道'},
+    {value: 0.12, name: '南园街道'},
+    {value: 0.03, name: '桂园街道'},
+    {value: 0.09, name: '南山街道'},
+    {value: 0.06, name: '沙头角街道'},
     {value: 0.12, name: '新安街道'},
     {value: 0.06, name: '龙岗街道'},
     {value: 0.08, name: '园岭街道'},
@@ -55,7 +55,7 @@ export const Chart12 = () => {
   }, []);
 
   return (
-    <div className="年龄段-图1">
+    <div className="chart12">
       <div className="chart">
         <div className="main" ref={divRef}/>
       </div>
